@@ -1,0 +1,70 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors {
+  display: none;
+}
+<style>
+body, h1,h2,h3,h4 {font-family: Lobster, monospace;}
+#main {margin-left: 120px}
+
+	html{
+		background-color: rgba(108,145,147,1.00)
+	}
+	.smaller-image {
+    width: 200px;
+	border-radius: 100%;
+	}
+	
+	header { 
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+	
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa-instagram {
+  background: rgba(255,255,255,1.00);
+  color:rgba(221,18,22,1.00);
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;	
+}
+
+</style>
