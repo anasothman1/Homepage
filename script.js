@@ -114,3 +114,23 @@ new_li2.appendChild(new_li3);
 new_li.appendChild(new_li2);
 
 element_list.appendChild(new_li);
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  let new_input = document.createElement('input');
+  window.speechSynthesis.speak(new SpeechSynthesisUtterance(getNumberOrString(document.getElementById('text').value)));
+
+  element_list.appendChild(new_input);
+
+});
