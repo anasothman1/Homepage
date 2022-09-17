@@ -66,3 +66,25 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
+
+document.getElementById('day').addEventListener('click', (event) => {
+  let element_daylist = document.getElementById('daylist');
+  element_daylist.setAttribute("src", '#ffff99');
+  element_daylist.setAttribute("src", '#000000');
+
+});
+let element_Night = document.getElementById('Night');
+element_Night.style.color = '#ffff99';
+element_Night.style.backgroundColor = '#000000';
+
+
+document.getElementById('day').addEventListener('click', (event) => {
+  let element_daylist2 = document.getElementById('daylist');
+  element_daylist2.innerText = 'Day mode';
+  element_daylist2.style.color = '#330000';
+  element_daylist2.style.backgroundColor = '#ffcccc';
+
+});
+let element_day = document.getElementById('day');
+element_day.style.color = '#330000';
+element_day.style.backgroundColor = '#ffcccc';
