@@ -17,8 +17,14 @@ body {
 .jest-lite-report__errors {
   display: none;
 }
-<style>
-body, h1,h2,h3,h4 {font-family: Lobster, monospace;}
+
+header {
+  font-family: Lobster;
+  font-size: 20px
+
+}
+
+body, h1,h2,h3,h4 {font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 #main {margin-left: 120px}
 
 	html{
@@ -29,9 +35,6 @@ body, h1,h2,h3,h4 {font-family: Lobster, monospace;}
 	border-radius: 100%;
 	}
 	
-	header { 
-		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-	}
 .fa-google {
   background: #dd4b39;
   color: white;
@@ -67,4 +70,3 @@ body, h1,h2,h3,h4 {font-family: Lobster, monospace;}
   border-radius: 50%;	
 }
 
-</style>
