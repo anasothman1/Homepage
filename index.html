@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>CodePen - Personal Home Page  Template</title>
   <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -19,79 +20,118 @@ You only need to write the HTML that<body>
 <title>Personal Home Page</title>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
 
 <body>
+
+<!-- Header -->
+<div class="background-image">
+  <br>
+  <Header><h1 class="name" >Hello I am Anas </h2>
+  <nav class="c-site-header"> </nav>
+
+ </Header>
+</div>
+
+<!-- Navbar (placed at the bottom of the header ) -->
+<div class="navbar">
+  <a href="#about"><i class="fa fa-fw fa-home"></i> About</a> 
+  <a href="#getintouch"><i class=""></i> Get in touch</a> 
+</div>
+<br>
 
   <!-- Avatar image in top left corner -->
   <a href="#"><img class="smaller-image Personal picture" src='https://i.postimg.cc/zb3pgjj6/Screenshot-20220809-171414-Gallery.jpg' alt='Screenshot-20220809-171414-Gallery'></a>
 
-  <!-- Page Content -->
-  <div class="main" id="main">
-    <!-- Header/Home -->
-    <header > Hello I am Anas </header>
-    <nav class="c-site-header"> </nav>
-    <nav aria-label="Main Site Links."></nav>
-  </div>
+<!-- About -->
+
+  <div class="container" id="about">
+  
+  <p>Hello I am Anas, This is my first website I`m creating, let me know what you think and what can I improve in the future 🧐 </p>
   <main>
-    <article>
-      <p> My name is Anas Othman; As part of my Journey to become software development I am working currently with a company called Bates IT. I’m currently work in a hospital.  My role requires me to provide 2nd line support, where I take part fixing computers.
-      </p>
-
-      <h1> Why I want to become a software development </h1>
-      <p>I decided to become a Software Development to gain more confidence in a working environment and build a better career. My current job is something I enjoy doing, however, I would not see myself going forward with my current job.</p><span id="dots"></span>
-      <span id="more">I have been thinking of studying something related to the same field I am in. Which I enjoy doing. I was thinking of starting security cyber, cloud and software development. However, I did not know where to start. After a friend joined CYF informed me that there is a better start for you to build a better career with the right people that can help you gain more skills that you need. I didn't think about it at all, and I was told to send me the link to join CYF. I completed the application. Furthermore, I started the first step. I never coded in my life, and I find it interesting learning how to code, which I see as the future for me of where I come from as my background. I arrived in England in 2012. I was living in Syria my family migrated from Somalia because of the war and my parents thought this is the best decision. Since I was young I had an interest in computers how to fix etc. I didn't have the opportunity to build myself or learn. since I arrive in England I try to pick myself up and follow my dream. at this stage, I feel stuck and not progressing in my dream. conde your future gave little hope that I can continue with my dream to find a job I can work remotely and travel at the same time,</span>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-
+      <h3 > A little a bit about me 😎</h3>
+        <p>I decided to become a Software Development to gain more confidence in a working environment and
+           build a better career <span id="dots">...</span><span id="more"> current job is something I enjoy doing, 
+           however, I would not see myself going forward with my current job.
+          I have been thinking of studying something related to the same field I am in. Which I enjoy doing. 
+           I was thinking of starting alot of things to have different career. however, I did not know where to start. 
+           After a friendof mine joined CYF and informed me that there is a better start for you to build a better career
+           with the right people that can help you gain more skills that you need. I didn't hestaie and
+           I asked where i can find CYF. I completed the application. Furthermore, I started the first step. 
+           I never coded in my life, and I find it interesting learning how to code. 
+           Since I was young I had an interest in computers how to fix etc.
+           I felt stuck somehow but here we are now creating first website 🤗. 
+           Code Your Future gave little hope that I can continue with my dream to find a job that
+           I can work anywhere in the world.</span> </p>
+           <button onclick="myFunction()" id="myBtn">Read more</button>
+  </main>        
+</div>
+<br>
+    <!-- Contact -->
+    <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="Getintouch">
+      <h1>Get in touch</h1>
      
-      <script src="myscripts.js"></script>
-      <br>
-      <br>
+      <p>Thank you for visiting my website, below tell me what you think 🤔</p>
+  
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label id="comments"> <b> Feedback or suggestions </b> </label>
+          <br>
+          <textarea id="comments"  class="input-textarea" name="comments" placeholder="Entre your suggestions here..." rows="5" cols="59"> 
+          </textarea>
+          <br>
+          <input id="submit" type="submit" value="Submit" class="submit-button" > </input>
+          
+<br>
+<br>
+<!-- Add font awesome icons -->
+      <a href="https://www.linkedin.com/in/anas-othman-b61742130/" class="fa fa-linkedin"></a>
+      <a href="https://github.com/anasothman1"  class="fa fa-github"></a>
 
-      <!-- Add font awesome icons -->
-      <a href="#" class="fa fa-google"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-instagram"></a>
       <br>
+        </div>
 
-    
-    </article>
-  </main>
 
+
+   
   <footer class="c-site-footer">
-    <p> <b>This is one of the reason i want to learn coding</b> </p>
+    <h1 id="title"> A motivational video   </h1>
 
     <iframe width="500" height="315" src="https://www.youtube.com/embed/fY3Ggo31FnE?autoplay=1&mute=1">
     </iframe>
-
   </footer>
+
+
+  <br>
+  <br>
   <br>
 
+
+
+  <h1 id="select"> what is your favourite fruit </h1>
+    <br>
+  <button id="select"> Select a random fruit</button>
+<ul id="list"></ul>
+<input id="text" />
+<button id="button">Add favourite fruit </button>
+
+<br>
+<h1 id="remember"> Remembering Queen Elizabeth II  </h1>
+<img id="image" width="750" height="500" />
+<br />
+<br />
+<button id="previous">Previous</button>
+<button id="next">Next</button>
+
+
+
+
+
 </body>
 
 </html>
 
-goes inside the
+<br>
+<br>
 
-<body> tag. To add things to the
-
-  <head>, click the ⚙️
-    ===================
-    -->
-
-    <!--- All the tests are red! You have to make them green. 
-
-Q How do you make the tests pass?
-A Meet the requirements!
-
-Make the first test pass by adding a <header> </header>-->
-
-    <!-- Your test console.
-Don't delete!-->
-    <aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
-    </aside>
-<!-- partial -->
-  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
-<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
-
-</body>
-</html>

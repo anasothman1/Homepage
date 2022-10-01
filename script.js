@@ -67,64 +67,6 @@ test("There are at least 500 words on the page", () => {
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
 
-document.getElementById('day').addEventListener('click', (event) => {
-  let element_daylist = document.getElementById('daylist');
-  element_daylist.setAttribute("src", '#ffff99');
-  element_daylist.setAttribute("src", '#000000');
-
-});
-let element_Night = document.getElementById('Night');
-element_Night.style.color = '#ffff99';
-element_Night.style.backgroundColor = '#000000';
-
-
-document.getElementById('day').addEventListener('click', (event) => {
-  let element_daylist2 = document.getElementById('daylist');
-  element_daylist2.innerText = 'Day mode';
-  element_daylist2.style.color = '#330000';
-  element_daylist2.style.backgroundColor = '#ffcccc';
-
-});
-let element_day = document.getElementById('day');
-element_day.style.color = '#330000';
-element_day.style.backgroundColor = '#ffcccc';
-
-let element_list = document.getElementById('list');
-let new_li = document.createElement('li');
-let new_a = document.createElement('a');
-new_a.setAttribute("href", 'http://www.codeyourfuture.io ');
-new_a.innerText = 'Code Your Future';
-
-new_li.appendChild(new_a);
-let new_li2 = document.createElement('li');
-let new_a2 = document.createElement('a');
-new_a2.setAttribute("href", 'https://www.google.com/');
-new_a2.innerText = 'Google';
-
-new_li2.appendChild(new_a2);
-let new_li3 = document.createElement('li');
-let new_a3 = document.createElement('a');
-new_a3.setAttribute("href", 'https://www.bbc.co.uk/news');
-new_a3.innerText = 'Bbc News';
-
-new_li3.appendChild(new_a3);
-
-new_li2.appendChild(new_li3);
-
-new_li.appendChild(new_li2);
-
-element_list.appendChild(new_li);
-function getNumberOrString(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return value
-  } else {
-    return number_value
-  }
-}
-
-
 
 document.getElementById('button').addEventListener('click', (event) => {
   let element_list = document.getElementById('list');
@@ -143,7 +85,46 @@ function getNumberOrString(value) {
     return number_value
   }
 }
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+var name2;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+function randomInt(n) {
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
+}
+
+function randomMember(arr) {
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
+}
+
+
+name2 = ['🍎 Red Apple', '🍍 Pineapple', '🍌 Banana', '🍐 Pear', '🍒 Cherries', '🍉 Watermelon'];
 
 
 document.getElementById('button').addEventListener('click', (event) => {
@@ -152,6 +133,45 @@ document.getElementById('button').addEventListener('click', (event) => {
   new_li.innerText = getNumberOrString(document.getElementById('text').value);
 
   element_list.appendChild(new_li);
+
+});
+
+document.getElementById('select').addEventListener('click', (event) => {
+  let element_list2 = document.getElementById('list');
+  let new_li2 = document.createElement('li');
+  new_li2.innerText = randomMember(name2);
+
+  element_list2.appendChild(new_li2);
+
+});
+
+var links;
+
+// Describe this function...
+function set_links() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  links = ['https://upload.wikimedia.org/wikipedia/commons/1/11/Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg', 'https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MzI2MDQ1OTYxODIzNTA5/queen-elizabeth-ii-gettyimages-904669426.jpg', 'https://britishheritage.com/uploads/article/2019/3/1781/article_Queen_Elizabeth_II_of_New_Zealand_Julian_Calder_for_Governor-General_of_New_Zealand.jpg?t=1656073940', 'https://static.foxnews.com/foxnews.com/content/uploads/2022/09/queen-elizabeth-young-coronation-prince-philip.jpg', 'https://cdn.vox-cdn.com/thumbor/pDQLNuvoE4vbVynapa0k6t3N2DU=/0x0:3997x2664/1200x800/filters:focal(1651x1092:2289x1730)/cdn.vox-cdn.com/uploads/chorus_image/image/71370333/GettyImages_1423635283d.0.jpg', 'https://images.mktw.net/im-621813?width=700&height=466'];
+}
+
+
+set_links();
+links.push(links[0]);
+let element_image = document.getElementById('image');
+element_image.setAttribute("src", links.shift());
+element_image.innerText = 'Hoo';
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+  links.push(links[0]);
+  let element_image2 = document.getElementById('image');
+  element_image2.setAttribute("src", links.shift());
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  links.unshift(links.slice(-1)[0]);
+  let element_image3 = document.getElementById('image');
+  element_image3.setAttribute("src", links.pop());
 
 });
 
